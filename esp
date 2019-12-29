@@ -312,7 +312,18 @@ void setUpConfig(){
 
 void setup() {
   Serial.begin(115200);
-  
+   Serial.begin(115200); 
+  pinMode(pinD0, OUTPUT); 
+  pinMode(pinD1, OUTPUT); 
+  //pinMode(pinD2, OUTPUT); 
+  pinMode(pinD3, OUTPUT); 
+  pinMode(pinD4, OUTPUT); 
+//  irsend.begin();   //pinD4 For IR
+  pinMode(pinD5, OUTPUT); 
+  pinMode(pinD6, OUTPUT); 
+ // pinMode(pinD7, INPUT_PULLUP); 
+ // pinMode(pinD8, OUTPUT); 
+
   pinMode(BUILTIN_LED, OUTPUT);
   ticker.attach(0.6, tick);
   WiFiManager wifiManager;
